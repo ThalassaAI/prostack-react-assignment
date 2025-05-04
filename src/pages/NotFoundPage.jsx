@@ -5,7 +5,6 @@ import Navigationbar from "../components/Navigationbar";
 function NotFoundPage() {
   const location = useLocation();
 
-  console.log(location.pathname);
   return (
     <>
       <Navigationbar />

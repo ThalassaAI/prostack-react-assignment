@@ -5,7 +5,6 @@ import Navigationbar from "../components/Navigationbar";
 function ErrorBoundaryPage() {
   const error = useRouteError();
 
-  console.log(error);
   return (
     <>
       <Navigationbar />
