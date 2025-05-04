@@ -39,8 +39,8 @@ function AssignmentList() {
               <tbody>
                 {assignmentRoutes.map((route, index) => {
                   return (
-                    <tr>
-                      <td key={index} className="w-25">
+                    <tr key={index}>
+                      <td className="w-25">
                         <Link to={route.link}>{route.title}</Link>
                       </td>
                       <td>{route.description}</td>

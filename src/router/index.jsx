@@ -1,12 +1,13 @@
 import { createBrowserRouter } from "react-router";
 import App from "../App";
-import HomePage from "../pages/HomePage";
+import { HomePage, ErrorBoundaryPage, NotFoundPage } from "../pages";
 import { ProductsPage } from "../assignments/01-product-list-rendering/pages";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorBoundaryPage />,
     children: [
       {
         index: true,
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
         element: <ProductsPage type="table" />,
       },
     ],
+  },
+  {
+    path: "*",
+    element: <NotFoundPage />,
   },
 ]);
 
