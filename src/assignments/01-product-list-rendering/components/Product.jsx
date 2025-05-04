@@ -88,7 +88,7 @@ function Product({
           <FavoriteButton
             isFavorite={isFavorite}
             onToggle={handleToggleFavorite}
-            customClasses="ms-2 position-absolute top-0 end-0"
+            customClasses="ms-2 position-absolute top-0 end-0 z-1"
           />
         </div>
       </div>
