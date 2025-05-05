@@ -1,5 +1,6 @@
 import React from "react";
-import reactSvg from "../assets/react.svg";
+// import reactSvg from "../assets/react.svg";
+import grokSvg from "../assets/grok.svg";
 import { Link } from "react-router";
 // bg - body - tertiary;
 function Navigationbar() {
@@ -11,7 +12,7 @@ function Navigationbar() {
       <div className="container-fluid">
         <Link className="navbar-brand d-flex align-items-center gap-1" to={"/"}>
           <img
-            src={reactSvg}
+            src={grokSvg}
             alt="React Logo"
             width="30"
             height="24"
