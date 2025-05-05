@@ -17,6 +17,7 @@ function Navigationbar() {
             width="30"
             height="24"
             className="d-inline-block align-text-top"
+            style={{ filter: "invert(1)" }}
           />
           Prostack Academy
         </Link>
