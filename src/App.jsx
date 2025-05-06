@@ -1,12 +1,11 @@
 import React from "react";
-import { Outlet } from "react-router";
-import Navigationbar from "./components/Navigationbar";
+import { Layout } from "./components";
 
 function App() {
   return (
     <>
-      <Navigationbar />
-      <Outlet />
+      {/* Other provider */}
+      <Layout />
     </>
   );
 }

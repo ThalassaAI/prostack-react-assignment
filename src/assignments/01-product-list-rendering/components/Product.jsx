@@ -6,18 +6,18 @@ import Carousel from "./Carousel";
 import Rating from "./Rating";
 
 function Product({
-  // image,
   id,
   images,
   title,
   price,
   description,
   discountPercentage,
-  tags,
-  category,
   rating,
-  stock,
   brand,
+  // image,
+  // tags,
+  // category,
+  // stock,
 }) {
   const [quantity, setQuantity] = useState(1);
   const [isFavorite, setIsFavorite] = useState(false);
@@ -53,13 +53,6 @@ function Product({
       <div className="card-body">
         <h5 className="card-title">{title}</h5>
         <p className="card-text">{description.slice(0, 50).concat("...")}</p>
-        {/* <p className="card-text">
-          {tags.map((tag) => (
-            <span key={tag} className="badge bg-secondary me-1">
-              {tag}
-            </span>
-          ))}
-        </p> */}
         <div className="d-flex gap-2 align-items-center mt-3">
           <span className="badge text-bg-primary d-flex align-items-center gap-1">
             <i className="bi bi-tag-fill"></i>
